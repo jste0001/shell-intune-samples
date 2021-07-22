@@ -376,7 +376,7 @@ function installPKG () {
         rm -rf "/Applications/$app"
     fi
 
-    installer -pkg "$tempfile" -target /Applications
+    installer -pkg "$tempfile" -target /
 
     # Checking if the app was installed successfully
     if [ "$?" = "0" ]; then
